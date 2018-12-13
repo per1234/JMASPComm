@@ -1,0 +1,50 @@
+#######################################
+# Syntax Coloring Map For ExampleLibrary
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+JMA_SP_Range		KEYWORD1
+
+JMA_SPBuffer		KEYWORD1
+JMA_SPComm			KEYWORD1
+JMA_SPCommSender	KEYWORD1
+JMA_SPCommReceiver	KEYWORD1
+
+JMA_SPCommDataFrameCheckStatus	KEYWORD1
+JMASPCommEventDataParse	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+makeSPRange	KEYWORD2
+maxRange	KEYWORD2
+
+crc8FromByte		KEYWORD2
+crc8FromBytes		KEYWORD2
+reverse8			KEYWORD2
+reverseBytes16		KEYWORD2
+reverseBytes32		KEYWORD2
+reverseBytes64		KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DF_CHECK_OK							LITERAL1
+DF_CHECK_ERROR_FRAME_TOTAL_LENGTH	LITERAL1
+DF_CHECK_ERROR_FRAME_HEADER			LITERAL1
+DF_CHECK_ERROR_DATA_LENGTH			LITERAL1
+DF_CHECK_ERROR_CRC					LITERAL1
+DF_CHECK_ERROR_DATA_LENGTH_OVER		LITERAL1
+
+COMM_MAIN_VER_100	LITERAL1
+COMM_DATA_VER_100	LITERAL1
+LASTE_COMM_MAIN_VER	LITERAL1

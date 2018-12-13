@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Disable command send and parse object
+command/
+*.dis/
