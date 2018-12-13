@@ -14,7 +14,7 @@ JMA_SPCommSender	KEYWORD1
 JMA_SPCommReceiver	KEYWORD1
 
 JMA_SPCommDataFrameCheckStatus	KEYWORD1
-JMASPCommEventDataParse	KEYWORD1
+JMASPCommEventDataParse			KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
