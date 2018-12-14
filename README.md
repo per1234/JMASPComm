@@ -5,7 +5,7 @@ v1.0 for iOS ( 2014.02 )
 JungleMetal Software.
 support@junglemetal.com
 
-2015.11.01	Kunpeng Zhang<zkppro@gmail.com> modified for arduino
+2015.11.01	Kunpeng Zhang <zkppro@gmail.com> modified for arduino
 
 
 Implement a simple serial communication. Use binary mode with frame CRC check.
@@ -31,25 +31,25 @@ Each data length is no more than 256 bytes (including frame header).
 
 Class Descriptions:
 
-* JMASPComm communication base class
+* JMA_SPComm communication base class
 Implement data buffer operations, communication protocol information attributes, basic protocol interpretation, and verification functions.
 
-* JMASPCommReceiver communication protocol receiving class
+* JMA_SPCommReceiver communication protocol receiving class
 Implement the receive of communication data
 
-* JMASPCommSender communication protocol sending class
+* JMA_SPCommSender communication protocol sending class
 Implement protocol packaging
 
-* JMASPCommCmd communication command generator
-Implement the creation of common protocol commands. Inherited from JMACOMMSender.
-Applications can directly inherit JMASPCommSender to customize your communication commands.
+* JMA_SPCommCmd communication command generator
+Implement the creation of common protocol commands. Inherited from JMA_SPCommSender.
+Applications can directly inherit JMA_SPCommSender to customize your communication commands.
 
 Other classes
 
-* JMABuffer
-The buffer class is responsible for all operations of the buffer. Maximum buffer 255 bytes
+* JMA_SPBuffer
+The buffer class is responsible for all operations of the buffer. Maximum buffer 256 bytes
 
-* JMARange
+* JMA_SP_Range
 Range structure, location, length
 
 * JMACRC8
@@ -67,7 +67,7 @@ v1.0 for iOS ( 2014.02 )
 JungleMetal Software.
 support@junglemetal.com
 
-2015.11.01	Kunpeng Zhang<zkppro@gmail.com> modified for arduino
+2015.11.01	Kunpeng Zhang <zkppro@gmail.com> modified for arduino
 
 
 实现一个简单的串行通讯协议。使用二进制方式，带数据帧 CRC 校验。
@@ -93,26 +93,26 @@ support@junglemetal.com
 
 类说明：
 
-* JMASPComm 通讯基类 
+* JMA_SPComm 通讯基类 
 	实现数据缓存操作，通讯协议信息属性，协议基本解读，校验功能。
 
-* JMASPCommReceiver 通讯协议接收类
+* JMA_SPCommReceiver 通讯协议接收类
 	实现通讯数据的接收
 
-* JMASPCommSender 通讯协议发送类
+* JMA_SPCommSender 通讯协议发送类
 	实现数据协议打包工作
 
-* JMASPCommCmd 通讯命令生成器
-	实现常用协议命令的创建。继承自 JMACOMMSender。
-	应用可以直接继承 JMACOMMSender 自己定义其他通讯命令实现.
+* JMA_SPCommCmd 通讯命令生成器
+	实现常用协议命令的创建。继承自 JMA_SPCommSender
+	应用可以直接继承 JMA_SPCommSender 自己定义其他通讯命令实现.
 
 
 其他辅助类
 
-* JMABuffer
-	缓存类，提供缓存的各项操作。最大缓存 255 字节
+* JMA_SPBuffer
+	缓存类，提供缓存的各项操作。最大缓存 256 字节
 
-* JMARange
+* JMA_SP_Range
 	范围结构，location, length
 
 * JMACRC8
